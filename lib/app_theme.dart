@@ -20,7 +20,7 @@ class AppTheme {
       accentColor: _lightOnPrimaryColor,
 
       colorScheme: ColorScheme.light(
-        onSurface: Colors.black,
+
         primary: _lightPrimaryColor,
         primaryVariant: _lightPrimaryVariantColor,
         secondary: _lightSecondaryColor,
