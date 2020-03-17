@@ -56,7 +56,7 @@ class LoginPage extends StatelessWidget {
             style: TextStyle(
                 fontFamily: 'Raleway',
 
-//                color: AppTheme.darkTheme.colorScheme.onPrimary
+
             ),
           ),
         ),
