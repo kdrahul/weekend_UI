@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:plural/app_theme.dart';
+import 'package:weekend/app_theme.dart';
 import '../commons/NavigationItems.dart';
 
 class NavigationItems {
