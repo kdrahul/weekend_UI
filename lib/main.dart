@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:weekend/screens/StudentScreens/Attendance.dart';
+import 'package:weekend/screens/StudentScreens/Broadcast.dart';
+import 'package:weekend/screens/StudentScreens/MarksPage.dart';
 import 'screens/HomePage/HomePage.dart';
-import 'screens/Types/Types.dart';
+// import 'screens/Types/Types.dart';
 import 'screens/LoginPage/LoginPage.dart';
 import 'app_theme.dart';
 void main() => runApp(
@@ -8,11 +11,14 @@ void main() => runApp(
         theme: AppTheme.lightTheme,
         darkTheme: AppTheme.darkTheme,
         debugShowCheckedModeBanner: false,
-        initialRoute: '/login',
+        initialRoute: '/home',
         routes: {
             '/home':(context) => HomePage(),
-            '/login': (context) => LoginPage(),
-            '/types' : (context) => Types(),
+            // '/login': (context) => LoginPage(),
+            // '/types' : (context) => Types(),
+            '/marks' : (context) => MarksPage(),
+            '/attendance' : (context) => AttendancePage(),
+            '/broadcast' : (context) => BroadcastPage(),
 
         },
 

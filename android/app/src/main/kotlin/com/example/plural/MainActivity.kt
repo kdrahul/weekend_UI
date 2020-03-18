@@ -1,4 +1,4 @@
-package com.example.plural
+package com.example.weekend
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity

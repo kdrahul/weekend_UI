@@ -63,7 +63,7 @@ class LoginPage extends StatelessWidget {
         floatingActionButton: FloatingActionButton.extended(
           icon: Icon(Icons.directions),
           onPressed: () {
-            Navigator.pushNamed(context, '/home');
+            Navigator.popAndPushNamed(context, '/home');
           },
           label: Text(
             'Sign-Up',
