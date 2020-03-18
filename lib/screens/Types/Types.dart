@@ -3,7 +3,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:plural/app_theme.dart';
+import 'package:weekend/app_theme.dart';
 
 class Types extends StatelessWidget {
   const Types({Key key}) : super(key: key);
