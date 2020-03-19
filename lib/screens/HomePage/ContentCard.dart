@@ -22,8 +22,9 @@ class _ContentPaneState extends State<ContentPane> {
         itemCount: _count,
         itemBuilder: (BuildContext context, int index) {
           return Card(
+            
               child: ListTile(
-            onTap: () {},
+            onTap: () => Navigator.pushNamed(context, '/broadcast_inside'),
             title: Text(contentItems[index].title,
                 style: TextStyle(
                     color: isDark
@@ -34,7 +35,7 @@ class _ContentPaneState extends State<ContentPane> {
                     color: isDark
                         ? AppTheme.darkTheme.accentColor
                         : AppTheme.lightTheme.accentColor)),
-            trailing: CircleAvatar(backgroundImage: contentItems[index].image),
+            trailing:  CircleAvatar(backgroundImage: contentItems[index].image),
           ));
         },
       ),
