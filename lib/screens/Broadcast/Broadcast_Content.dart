@@ -22,7 +22,7 @@ class BroadcastContent {
 BroadcastContent broadcastContent = BroadcastContent(
   title: "Random Message",
   body:
-      "This is a random Message broadcasted across everyone to test a feature",
+      "“Thin” and “light” are still very much the qualities that define the Air. It’s a product that trades the processing power of the rest of the MacBook family in favor of a design that slips comfortably into the seat-back pocket in front of you on the plane. Indeed, the device has never been the one you want for heavy video processing or other resource-intensive applications. And while the 2020 model gets some important internal updates, that remains the case here.If, however, you’re worried about lower-back pain, this is probably the MacBook for you",
   sender: "KD",
   givenTime: DateTime(2020, 1, 19, 18, 20),
   backgroundImage: NetworkImage(
