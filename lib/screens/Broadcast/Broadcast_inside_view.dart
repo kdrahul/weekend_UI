@@ -2,11 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:weekend/app_theme.dart';
 import 'package:weekend/screens/Broadcast/Broadcast_Content.dart';
 
-
-
-
-
-
 class BroadcastInside extends StatelessWidget {
   const BroadcastInside({Key key}) : super(key: key);
 
@@ -32,7 +27,6 @@ class BroadcastInside extends StatelessWidget {
                         colorFilter:
                             ColorFilter.mode(Colors.black54, BlendMode.darken),
                         image: broadcastContent.backgroundImage,
-                            
                         fit: BoxFit.cover)),
                 width: MediaQuery.of(context).size.width,
                 height: (MediaQuery.of(context).size.height) / 3.5,
@@ -45,13 +39,6 @@ class BroadcastInside extends StatelessWidget {
                       child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
-                            // ListTile(
-
-                            //   title: Text(
-                            //     "Red Alert, Someone pooped on the floor",
-                            //     textScaleFactor: 2,
-                            //   )),
-
                             Text(
                               broadcastContent.title,
                               textAlign: TextAlign.start,

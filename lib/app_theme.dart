@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 class AppTheme {
   AppTheme._();
 
-
-
   static const Color _lightPrimaryColor = Color(0xFFf9f7f7);
   static const Color _lightSecondaryColor = Color(0xFFdbe2ef);
   static const Color _lightPrimaryVariantColor = Color(0xFF3f72af);
@@ -18,9 +16,7 @@ class AppTheme {
   static final ThemeData lightTheme = ThemeData(
       primaryColor: _lightPrimaryColor,
       accentColor: _lightOnPrimaryColor,
-
       colorScheme: ColorScheme.light(
-
         primary: _lightPrimaryColor,
         primaryVariant: _lightPrimaryVariantColor,
         secondary: _lightSecondaryColor,
@@ -28,7 +24,7 @@ class AppTheme {
       ),
       cardColor: _lightSecondaryColor,
       cardTheme: CardTheme(
-          color: _lightSecondaryColor,
+        color: _lightSecondaryColor,
       ),
       scaffoldBackgroundColor: _lightPrimaryColor,
       inputDecorationTheme: InputDecorationTheme(
@@ -60,11 +56,10 @@ class AppTheme {
         secondary: _darkSecondaryColor,
         onSurface: _darkPrimaryVariantColor,
       ),
-        cardColor: _darkSecondaryColor,
-
-        cardTheme: CardTheme(
-            color: _darkSecondaryColor,
-        ),
+      cardColor: _darkSecondaryColor,
+      cardTheme: CardTheme(
+        color: _darkSecondaryColor,
+      ),
       inputDecorationTheme: InputDecorationTheme(
           border: OutlineInputBorder(),
           focusedBorder: OutlineInputBorder(),
@@ -79,5 +74,3 @@ class AppTheme {
           color: _darkPrimaryColor,
           iconTheme: IconThemeData(color: _darkOnPrimaryColor)));
 }
-
-

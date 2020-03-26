@@ -2,31 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:weekend/app_theme.dart';
 import '../commons/NavigationItems.dart';
 
-class NavigationItems {
-  String name;
-  IconData icon;
-  String routes;
-  NavigationItems({this.name, this.icon, this.routes});
-}
 
 class CollapsingNavigationDrawer extends StatelessWidget {
   const CollapsingNavigationDrawer({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    List<NavigationItems> navItems = [
-      NavigationItems(name: 'Home', icon: Icons.home, routes: '/home'),
-      NavigationItems(
-          name: 'Broadcast Alerts',
-          icon: Icons.account_circle,
-          routes: '/broadcast'),
-      NavigationItems(
-          name: 'Marks', icon: Icons.account_circle, routes: '/marks'),
-      NavigationItems(
-          name: 'Attendance',
-          icon: Icons.account_circle,
-          routes: '/attendance'),
-    ];
+    
     bool isDark = MediaQuery.of(context).platformBrightness == Brightness.dark;
 
     return Container(
@@ -92,6 +74,7 @@ class CollapsingNavigationDrawer extends StatelessWidget {
                                   (Route<dynamic> route) => false
                                   );
                             } else {
+                              
                               Navigator.popAndPushNamed(
                                   context, navItems[index].routes);
                             }
