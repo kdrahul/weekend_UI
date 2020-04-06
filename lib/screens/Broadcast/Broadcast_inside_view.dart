@@ -8,7 +8,7 @@ class BroadcastInside extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     bool _isDark = MediaQuery.of(context).platformBrightness == Brightness.dark;
-
+    Color _textColor = _isDark ? AppTheme.darkTheme.accentColor : AppTheme.lightTheme.primaryColor;
     return Container(
       child: Scaffold(
         appBar: AppBar(
@@ -44,9 +44,8 @@ class BroadcastInside extends StatelessWidget {
                               textAlign: TextAlign.start,
                               textScaleFactor: 2,
                               style: TextStyle(
-                                  color: _isDark
-                                      ? AppTheme.darkTheme.accentColor
-                                      : AppTheme.lightTheme.primaryColor),
+                                  color: _textColor ),
+                                  
                             ),
                           ]),
                     ),
@@ -60,9 +59,7 @@ class BroadcastInside extends StatelessWidget {
                             textAlign: TextAlign.right,
                             textScaleFactor: 1.3,
                             style: TextStyle(
-                                color: _isDark
-                                    ? AppTheme.darkTheme.accentColor
-                                    : AppTheme.lightTheme.primaryColor),
+                                color: _textColor),
                           ),
                         ),
                         Padding(
@@ -73,9 +70,7 @@ class BroadcastInside extends StatelessWidget {
                             textAlign: TextAlign.right,
                             textScaleFactor: 1.3,
                             style: TextStyle(
-                                color: _isDark
-                                    ? AppTheme.darkTheme.accentColor
-                                    : AppTheme.lightTheme.primaryColor),
+                                color: _textColor),
                           ),
                         ),
                       ],

@@ -28,13 +28,13 @@ class CollapsingNavigationDrawer extends StatelessWidget {
                     color: isDark
                         ? AppTheme.darkTheme.accentColor
                         : AppTheme.lightTheme.accentColor,
-                    fontSize: 18),
+                    fontSize: 18, fontWeight: FontWeight.w600),
               ),
               subtitle: Text("1BI11IS001",
                   style: TextStyle(
                       color: isDark
                           ? AppTheme.darkTheme.accentColor
-                          : AppTheme.lightTheme.accentColor)),
+                          : AppTheme.lightTheme.accentColor, fontWeight: FontWeight.w300)),
               leading: CircleAvatar(),
             ),
             SizedBox(height: 50),

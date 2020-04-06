@@ -1,9 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:weekend/app_theme.dart';
 import '../commons/CollapsingNavigationDrawer.dart';
 
 import 'ContentCard.dart';
+DateTime currentTime;
+DateTime pressedTime;
+Future<bool> closeEntireApp() async {
+  currentTime = DateTime.now();
+  
+  //Statement 1 Or statement2
+
+  if (pressedTime == null ||
+      pressedTime.difference(currentTime) > Duration(milliseconds: 500)) {
+    // print(currentTime.difference(pressedTime));
+    pressedTime = currentTime;
+    Fluttertoast.showToast(
+        msg: "Double Click to exit app",
+        backgroundColor: Colors.black45,
+        textColor: Colors.white60);
+    return false;
+  }
+  return true;
+}
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -13,32 +31,10 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  
-
-  Future<bool> closeEntireApp() {
-    DateTime now = DateTime.now();
-    DateTime currentTime ;  
-    if (currentTime == null ||
-        now.difference(currentTime) > Duration(seconds: 1)) {
-      currentTime = now;
-
-      Fluttertoast.showToast(
-          msg: 'Press Back again to exit',
-          toastLength: Toast.LENGTH_SHORT);
-
-      return Future.value(true);
-    } else {
-      Fluttertoast.cancel();
-      return Future.value(false);
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
-
-        child: 
-             Scaffold(
+        child: Scaffold(
           appBar: AppBar(
             title: Text('Welcome, User'),
           ),

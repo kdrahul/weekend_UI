@@ -12,7 +12,7 @@ void main() => runApp(MaterialApp(
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
-      initialRoute: '/broadcast_form',
+      initialRoute: '/home',
       routes: {
         '/home': (context) => HomePage(),
         '/broadcast_inside': (context) => BroadcastInside(),
